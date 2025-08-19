@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+### Tweeter Clone
+
+Tweeter Clone is a simple social media web application inspired by Twitter. Users can create a profile, select an avatar, and post short messages ("tweets") to share with others. The project is built using React and demonstrates core concepts such as component-based architecture, state management, and user interaction.
+
+## Screenshots
+
+![Profile Form](docs/profile-form.png)
+![Feed Example](docs/feed-example.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

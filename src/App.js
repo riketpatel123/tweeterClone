@@ -90,13 +90,18 @@ function App() {
     localStorage.setItem("currentUser", JSON.stringify(profileData));
   };
 
+  const handleLogout = () => {
+    setCurrentUser(null);
+    localStorage.removeItem("currentUser");
+  };
+
   if (!currentUser) {
     return <ProfileForm onProfileCreate={handleProfileCreate} />;
   }
 
   return (
     <div className="App">
-      <Navigation onToggleTweetForm={toggleTweetForm} />
+      <Navigation onToggleTweetForm={toggleTweetForm} onLogout={handleLogout} />
       <Profile user={currentUser} />
       <main className="container">
         {isTweetFormVisible && <TweetForm onTweet={addNewTweet} />}

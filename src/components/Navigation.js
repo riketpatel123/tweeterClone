@@ -1,6 +1,6 @@
 import React from "react";
 
-function Navigation({ onToggleTweetForm }) {
+function Navigation({ onToggleTweetForm, onLogout }) {
   const handleClick = (event) => {
     event.preventDefault();
     onToggleTweetForm();
@@ -8,7 +8,14 @@ function Navigation({ onToggleTweetForm }) {
 
   return (
     <nav>
-      <span className="nav--text">tweeter</span>
+      <span
+        className="nav--text"
+        onClick={onLogout}
+        style={{ cursor: "pointer" }}
+        title="Logout"
+      >
+        tweeter
+      </span>
 
       <div className="btn btn--scroll">
         <a
