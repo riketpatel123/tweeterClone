@@ -4,8 +4,9 @@ Tweeter Clone is a simple social media web application inspired by Twitter. User
 
 ## Screenshots
 
-![Profile Form](docs/profile-form.png)
-![Feed Example](docs/feed-example.png)
+![Profile Form](https://github.com/riketpatel123/tweeterClone/blob/main/docs/CreateProfile.png?raw=true)
+
+![Feed Example](https://github.com/riketpatel123/tweeterClone/blob/main/docs/MainScreen.png?raw=true)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
