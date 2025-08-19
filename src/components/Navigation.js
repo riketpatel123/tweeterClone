@@ -1,15 +1,25 @@
-import React from 'react';
+import React from "react";
 
-function Navigation() {
+function Navigation({ onToggleTweetForm }) {
+  const handleClick = (event) => {
+    event.preventDefault();
+    onToggleTweetForm();
+  };
+
   return (
     <nav>
-      <span class="nav--text">tweeter</span>
+      <span className="nav--text">tweeter</span>
 
-      <div class="btn btn--scroll">
-        <a href="#" class="btn__text btn--borderless" title="Compose Tweet">
-          <span class="btn--bold">Write</span> a new tweet
+      <div className="btn btn--scroll">
+        <a
+          href="#"
+          onClick={handleClick}
+          className="btn__text btn--borderless"
+          title="Compose Tweet"
+        >
+          <span className="btn--bold">Write</span> a new tweet
           <br />
-          <i class="btn__icon fas fa-angle-double-down"></i>
+          <i className="btn__icon fas fa-angle-double-down"></i>
         </a>
       </div>
     </nav>

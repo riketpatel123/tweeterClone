@@ -1,0 +1,99 @@
+.profile-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.profile-form {
+    background-color: #f4f1ec;
+    border: 2px solid #000;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+}
+
+.profile-form h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.profile-form p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important */
+}
+
+.avatar-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.avatar-selection img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.avatar-selection img:hover {
+    border-color: #4c96d7;
+}
+
+.avatar-selection img.selected {
+    border-color: #2970b2;
+    box-shadow: 0 0 5px #2970b2;
+}
+
+.profile-form .btn-primary {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #2970b2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.profile-form .btn-primary:hover {
+    background-color: #1f5a91;
+}
+
+.profile-form .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    text-align: center;
+}

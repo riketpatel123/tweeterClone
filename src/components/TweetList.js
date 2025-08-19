@@ -1,11 +1,18 @@
 import React from "react";
 import Tweet from "./Tweet";
 
-function TweetList() {
+function TweetList({ tweets = [], onDeleteTweet, onUpdateTweet, currentUser }) {
   return (
     <section className="tweets">
-      <Tweet />
-      <Tweet />
+      {tweets.map((tweet) => (
+        <Tweet
+          key={tweet.id}
+          tweet={tweet}
+          onDeleteTweet={onDeleteTweet}
+          onUpdateTweet={onUpdateTweet}
+          currentUser={currentUser}
+        />
+      ))}
     </section>
   );
 }

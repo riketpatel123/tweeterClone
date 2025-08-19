@@ -1,17 +1,17 @@
 import React from "react";
 
-function Profile() {
-  const firstname = "Amy";
-  const lastName = "Mansell";
-  const avtar = "./profile-hex.png";
+function Profile({ user }) {
   return (
     <aside>
-      <div class="profile">
-        <img class="profile__image" src={avtar} alt="avtar" />
+      <div className="profile">
+        <img className="profile__image" src={user.avatar} alt="avatar" />
       </div>
       <br />
-      <div class="profile__name">
-        <h2><span class="profile--bold">{firstname}</span> {lastName}</h2>
+      <div className="profile__name">
+        <h2>
+          <span className="profile--bold">{user.firstName}</span>{" "}
+          {user.lastName}
+        </h2>
       </div>
     </aside>
   );
