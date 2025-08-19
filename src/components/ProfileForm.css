@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
 }
 
 .profile-form {
@@ -60,6 +59,7 @@
     cursor: pointer;
     border: 3px solid transparent;
     transition: border-color 0.2s;
+    user-select: none;
 }
 
 .avatar-selection img:hover {

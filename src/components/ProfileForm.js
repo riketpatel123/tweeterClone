@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "./ProfileForm.css";
 
 const avatars = [
+  "/avatars/avatar1.png",
+  "/avatars/avatar2.png",
+  "/avatars/avatar3.png",
   "/avatars/avatar4.png",
-  "/avatars/avatar5.png",
-  "/avatars/avatar6.png",
 ];
 
 function ProfileForm({ onProfileCreate }) {
@@ -78,12 +79,13 @@ function ProfileForm({ onProfileCreate }) {
                   src={avatar}
                   alt="avatar choice"
                   className={selectedAvatar === avatar ? "selected" : ""}
+                  draggable="false"
                   onClick={() => setSelectedAvatar(avatar)}
                 />
               ))}
             </div>
           </div>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary form__input">
             Join Tweeter
           </button>
         </form>
